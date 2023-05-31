@@ -1,0 +1,146 @@
+body {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+h1 {
+  font-size: 35px;
+  margin-bottom: -5px;
+}
+input {
+  border: 1px solid hsl(223, 100%, 88%);
+  width: 300px;
+  padding: 15px;
+  border-radius: 50px;
+  opacity: 0.6;
+  margin: 10px 10px 60px 0;
+}
+button {
+  padding: 15px;
+  border-radius: 50px;
+  width: 140px;
+  border: none;
+  color: white;
+  background: hsl(223, 87%, 63%);
+  box-shadow: 0 5px 5px hsl(223, 87%, 63%, 0.3);
+}
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:active {
+  transform: scale(0.9);
+}
+.error {
+  margin: 10px 275px 60px 0;
+  font-size: 10px;
+  font-style: italic;
+  color: hsl(354, 100%, 66%);
+  display: none;
+}
+.succes {
+  margin: 10px 420px 60px 0;
+  font-size: 10px;
+  font-style: italic;
+  color: #32cd32;
+  display: none;
+}
+.visible {
+  display: block;
+  margin-top: -50px;
+}
+.logo {
+  width: 65px;
+  margin: 70px 0 20px 0;
+}
+.trading {
+  width: 35%;
+  margin-bottom: 60px;
+}
+.copy {
+  font-size: 10px;
+  margin-bottom: 50px;
+}
+.low {
+  opacity: 0.4;
+  font-weight: 100;
+}
+.reseaux {
+  display: flex;
+  height: 25px;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.facebook,
+.twitter,
+.insta {
+  border: 1px solid rgb(128, 128, 128, 0.2);
+  border-radius: 50px;
+  padding: 5px 0;
+  opacity: 0.5;
+}
+.facebook:hover,
+.twitter:hover,
+.insta:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  background: hsl(223, 87%, 63%);
+  opacity: 1;
+}
+
+::placeholder {
+  color: hsl(223, 100%, 88%);
+  padding-left: 7px;
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 30px;
+  }
+  input {
+    margin-bottom: 10px;
+  }
+  button {
+    width: 330px;
+    margin: 0 0 60px -10px;
+  }
+  .trading {
+    width: 300px;
+  }
+  .facebook,
+  .twitter,
+  .insta {
+    padding: 5px;
+  }
+  .error,
+  .succes {
+    margin: -40px auto 30px auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 30px;
+  }
+  input {
+    margin-bottom: 10px;
+  }
+  button {
+    width: 330px;
+    margin: 0 0 60px -10px;
+  }
+  .trading {
+    width: 300px;
+  }
+  .facebook,
+  .twitter,
+  .insta {
+    padding: 5px;
+  }
+  .error,
+  .succes {
+    margin: -40px auto 30px auto;
+  }
+}
